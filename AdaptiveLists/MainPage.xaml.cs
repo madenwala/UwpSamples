@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Diagnostics;
+using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -17,16 +18,6 @@ namespace AdaptiveLists
         }
     }
 
-    //public class ItemContainerStyleSelector : StyleSelector
-    //{
-    //    public Style OddItemStyle { get; set; }
-    //    public Style EventItemStyle { get; set; }
-    //    protected override Style SelectStyleCore(object item, DependencyObject container)
-    //    {
-    //        return ((ListItem)item).Index % 2 == 0 ? this.EventItemStyle : this.OddItemStyle;
-    //    }
-    //}
-
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -44,6 +35,12 @@ namespace AdaptiveLists
             }).ToList();
 
             //ImageURL = "http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg",
+        }
+
+        private void list_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var item = e.ClickedItem as ListItem;
+            Debug.WriteLine(item.Index.ToString());
         }
     }
 }

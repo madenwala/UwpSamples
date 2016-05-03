@@ -5,14 +5,27 @@
     xmlns:local="using:AdaptiveLists"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:interactions="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
     <Page.Resources>
         <DataTemplate x:Name="MyItemTemplate" x:DataType="local:ListItem">
-            <UserControl>
+            <UserControl Foreground="Green">
                 <RelativePanel x:Name="panel">
+
+                    <interactivity:Interaction.Behaviors>
+                        <interactions:EventTriggerBehavior EventName="PointerEntered" SourceObject="{Binding ElementName=panel}">
+                            <interactions:ChangePropertyAction TargetObject="{Binding ElementName=tb}" PropertyName="Foreground" Value="Red" />
+                        </interactions:EventTriggerBehavior>
+                        <interactions:EventTriggerBehavior EventName="PointerExited" SourceObject="{Binding ElementName=panel}">
+                            <interactions:ChangePropertyAction TargetObject="{Binding ElementName=tb}" PropertyName="Foreground" Value="Black" />
+                        </interactions:EventTriggerBehavior>
+                    </interactivity:Interaction.Behaviors>                    
+                    
                     <TextBlock x:Name="tb" Text="{x:Bind Description}" Style="{StaticResource MyHeaderTextBlockStyle}" />
                     <Image x:Name="img" Source="{x:Bind ImageURL}" Stretch="UniformToFill" />
+                    
                     <VisualStateManager.VisualStateGroups>
                         <VisualStateGroup>
                             <VisualState>
@@ -43,6 +56,7 @@
                   SelectionMode="Single"
                   IsItemClickEnabled="True"
                   ItemTemplate="{StaticResource MyItemTemplate}"
+                  ItemClick="list_ItemClick"
                   ItemContainerStyle="{StaticResource MyItemContainerStyle}"
                   />        
     </Grid>
