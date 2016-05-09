@@ -126,10 +126,41 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
+    <DataTemplate x:Name="MyItemTemplate" x:DataType="local:ListItem">
+        <UserControl>
+            <RelativePanel x:Name="panel" Background="Gray">
+
+                <TextBlock x:Name="tb" Text="{x:Bind Description}" Style="{StaticResource MyHeaderTextBlockStyle}" />
+                <Image x:Name="img" Source="{x:Bind ImageURL}" Stretch="UniformToFill" />
+
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup>
+                        <VisualState>
+                            <VisualState.StateTriggers>
+                                <AdaptiveTrigger MinWindowWidth="{StaticResource SnapPoint8Landscape}" />
+                            </VisualState.StateTriggers>
+                            <VisualState.Setters>
+                                <Setter Target="img.(RelativePanel.Below)" Value="tb" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState>
+                            <VisualState.StateTriggers>
+                                <AdaptiveTrigger MinWindowWidth="{StaticResource SnapPoint5}" />
+                            </VisualState.StateTriggers>
+                            <VisualState.Setters>
+                                <Setter Target="img.(RelativePanel.RightOf)" Value="tb" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </RelativePanel>
+        </UserControl>
+    </DataTemplate>
+
     <Style TargetType="TextBlock" x:Key="MyHeaderTextBlockStyle">
         <Setter Property="FontWeight" Value="Bold" />
-        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontSize" Value="24" />
     </Style>
     
 </ResourceDictionary>

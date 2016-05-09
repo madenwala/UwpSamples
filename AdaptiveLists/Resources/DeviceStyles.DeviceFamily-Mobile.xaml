@@ -1,0 +1,21 @@
+﻿<ResourceDictionary
+    x:Class="AdaptiveLists.Resources.DeviceStyles" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AdaptiveLists">
+
+    <Style TargetType="TextBlock" x:Key="MyHeaderTextBlockStyle">
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="Foreground" Value="Yellow" />
+    </Style>
+
+    <DataTemplate x:Name="MyItemTemplate" x:DataType="local:ListItem">
+        <Grid>
+            <Image x:Name="img" Source="{x:Bind ImageURL}" Stretch="UniformToFill" />
+            <Grid Background="Black" Opacity=".5" VerticalAlignment="Bottom">
+                <TextBlock x:Name="tb" Text="{x:Bind Description}" Style="{StaticResource MyHeaderTextBlockStyle}" />
+            </Grid>
+        </Grid>
+    </DataTemplate>
+
+</ResourceDictionary>

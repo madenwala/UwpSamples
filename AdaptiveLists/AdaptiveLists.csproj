@@ -131,7 +131,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\DeviceStyles.DeviceFamily-Desktop.xaml">
+    <Page Include="Resources\DeviceStyles.DeviceFamily-Mobile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

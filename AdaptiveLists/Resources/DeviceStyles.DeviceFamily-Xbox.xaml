@@ -4,7 +4,8 @@
     xmlns:local="using:AdaptiveLists.Resources">
 
     <Style TargetType="TextBlock" x:Key="MyHeaderTextBlockStyle">
-        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontSize" Value="38" />
+        <Setter Property="Foreground" Value="Purple" />
     </Style>
     
 </ResourceDictionary>
