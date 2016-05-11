@@ -1,0 +1,191 @@
+﻿<Page
+    x:Class="Contoso.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Contoso"
+    xmlns:behaviors="using:Contoso.Behaviors"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="LightBlue">
+
+    <Page.Resources>
+        <Style TargetType="Rectangle">
+            <Setter Property="Width" Value="400" />
+            <Setter Property="Height" Value="400" />
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Auto" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ScrollViewer.VerticalScrollMode" Value="Disabled" />
+            <Setter Property="Margin" Value="-48,0" />
+            <Setter Property="Padding" Value="48,0" />
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <ItemsStackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+            <!--<Setter Property="interactivity:Interaction.Behaviors">
+                <Setter.Value>
+                    <interactivity:BehaviorCollection>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:BehaviorCollection>
+                </Setter.Value>
+            </Setter>-->
+        </Style>
+    </Page.Resources>
+
+    <!--Mimic XBOX Windows + Title Safe Area with this grid-->
+    <Grid Margin="48,27" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <!--Normal app begins here. To run on XBOX, remove the wrapping Grid-->
+        <ScrollViewer Margin="-48,-27">
+            <StackPanel Padding="48,27">
+                <ListView>
+                    <interactivity:Interaction.Behaviors>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:Interaction.Behaviors>
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                </ListView>
+                <ListView>
+                    <interactivity:Interaction.Behaviors>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:Interaction.Behaviors>
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                </ListView>
+                <ListView>
+                    <interactivity:Interaction.Behaviors>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:Interaction.Behaviors>
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                </ListView>
+                <ListView>
+                    <interactivity:Interaction.Behaviors>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:Interaction.Behaviors>
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                </ListView>
+                <ListView>
+                    <interactivity:Interaction.Behaviors>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:Interaction.Behaviors>
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                </ListView>
+                <ListView>
+                    <interactivity:Interaction.Behaviors>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:Interaction.Behaviors>
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                </ListView>
+                <ListView>
+                    <interactivity:Interaction.Behaviors>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:Interaction.Behaviors>
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                    <Rectangle Fill="Green" />
+                </ListView>
+                <ListView>
+                    <interactivity:Interaction.Behaviors>
+                        <behaviors:GameControllerListFocusBehavior />
+                    </interactivity:Interaction.Behaviors>
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                    <Rectangle Fill="Red" />
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

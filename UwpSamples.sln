@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaptiveLists", "AdaptiveLists\AdaptiveLists.csproj", "{4DC6C6AD-EB3D-4DF1-A18C-68EE333CF730}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XboxOneTitleSafeLists", "XboxOneTitleSafeLists\XboxOneTitleSafeLists.csproj", "{ECEBBF22-E790-428A-BFF5-C2984652021A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -33,6 +35,24 @@ Global
 		{4DC6C6AD-EB3D-4DF1-A18C-68EE333CF730}.Release|x86.ActiveCfg = Release|x86
 		{4DC6C6AD-EB3D-4DF1-A18C-68EE333CF730}.Release|x86.Build.0 = Release|x86
 		{4DC6C6AD-EB3D-4DF1-A18C-68EE333CF730}.Release|x86.Deploy.0 = Release|x86
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|ARM.Build.0 = Debug|ARM
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|ARM.Deploy.0 = Debug|ARM
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|x64.ActiveCfg = Debug|x64
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|x64.Build.0 = Debug|x64
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|x64.Deploy.0 = Debug|x64
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|x86.ActiveCfg = Debug|x86
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|x86.Build.0 = Debug|x86
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Debug|x86.Deploy.0 = Debug|x86
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|ARM.ActiveCfg = Release|ARM
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|ARM.Build.0 = Release|ARM
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|ARM.Deploy.0 = Release|ARM
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|x64.ActiveCfg = Release|x64
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|x64.Build.0 = Release|x64
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|x64.Deploy.0 = Release|x64
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|x86.ActiveCfg = Release|x86
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|x86.Build.0 = Release|x86
+		{ECEBBF22-E790-428A-BFF5-C2984652021A}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
