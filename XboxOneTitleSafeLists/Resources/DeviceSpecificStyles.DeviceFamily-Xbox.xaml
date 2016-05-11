@@ -5,5 +5,7 @@
 
     <Thickness x:Key="ShellContainerMargin">-48,-27</Thickness>
     <Thickness x:Key="ShellBodyMargin">48,27</Thickness>
+    <Thickness x:Key="ElementTitleSafeMargin">-48,0</Thickness>
+    <Thickness x:Key="ElementTitleSafePadding">48,0</Thickness>
 
 </ResourceDictionary>
