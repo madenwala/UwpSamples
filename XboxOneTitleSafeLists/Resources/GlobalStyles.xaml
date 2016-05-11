@@ -1,0 +1,10 @@
+﻿<ResourceDictionary
+    x:Class="Contoso.Resources.GlobalStyles"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Contoso.Resources">
+
+    <Thickness x:Key="ShellContainerMargin">-48,-27</Thickness>
+    <Thickness x:Key="ShellBodyMargin">48,27</Thickness>
+
+</ResourceDictionary>

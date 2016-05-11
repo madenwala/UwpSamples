@@ -1,8 +1,8 @@
 ﻿namespace AdaptiveLists.Resources
 {
-    public partial class DeviceStyles
+    public partial class DeviceSpecificStyles
     {
-        public DeviceStyles()
+        public DeviceSpecificStyles()
         {
             this.InitializeComponent();
         }
