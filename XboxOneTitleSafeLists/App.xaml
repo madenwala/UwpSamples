@@ -8,7 +8,6 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <resources:GlobalStyles />
                 <resources:DeviceSpecificStyles />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
