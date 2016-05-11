@@ -38,7 +38,8 @@
         </Style>
     </Page.Resources>
 
-    <ScrollViewer Margin="{StaticResource ShellContainerMargin}">
+    <Grid>
+        <ScrollViewer Margin="{StaticResource ShellContainerMargin}">
         <StackPanel Padding="{StaticResource ShellBodyMargin}">
             <ListView>
                 <interactivity:Interaction.Behaviors>
@@ -189,5 +190,9 @@
             </ListView>
         </StackPanel>
     </ScrollViewer>
+        
+        <!--Title Safe Border-->
+        <Border BorderBrush="Red" BorderThickness="1" />
+    </Grid>
     
 </Page>
