@@ -1,5 +1,5 @@
 ﻿<ResourceDictionary
-    x:Class="AdaptiveLists.Resources.DeviceStyles" 
+    x:Class="AdaptiveLists.Resources.DeviceSpecificStyles" 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:AdaptiveLists.Resources">
